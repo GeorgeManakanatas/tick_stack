@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# data file volumes
+!data/chronograf
+data/chronograf/*
+!data/influxdb
+data/influxdb/*
+!data/kapacitor
+data/kapacitor/*
+!data/telegraf
+data/telegraf/*
