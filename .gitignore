@@ -129,11 +129,11 @@ dmypy.json
 .pyre/
 
 # data file volumes
-!data/chronograf
+!data/chronograf/.gitkeep
 data/chronograf/*
-!data/influxdb
+!data/influxdb/.gitkeep
 data/influxdb/*
-!data/kapacitor
+!data/kapacitor/.gitkeep
 data/kapacitor/*
-!data/telegraf
+!data/telegraf/.gitkeep
 data/telegraf/*
