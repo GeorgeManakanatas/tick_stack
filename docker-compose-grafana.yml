@@ -63,6 +63,23 @@ services:
       - "9092:9092"
     networks:
       - monitornet
+  
+  grafana:
+    container_name: grafana 
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    env_file:
+      - 'env.grafana'
+    volumes:
+      # - ./grafana/etc/ssl/:/etc/ssl
+      - ./grafana/etc/grafana.ini:/etc/grafana/grafana.ini
+      - ./grafana/data/:/var/lib/grafana
+      # - ./grafana/dashboards:/var/lib/grafana/dashboards
+    links:
+      - influxdb
+    networks:
+      - monitornet
 
 networks:
     monitornet:
