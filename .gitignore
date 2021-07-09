@@ -137,3 +137,5 @@ data/influxdb/*
 data/kapacitor/*
 !data/telegraf/.gitkeep
 data/telegraf/*
+grafana/data/*
+kapacitor/kapacitor.db
